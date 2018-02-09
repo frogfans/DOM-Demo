@@ -1,9 +1,9 @@
 # DOM-Demo
-### 一、摘要
+## 一、摘要
 以博客栏为例，使用DOM实现批量化布局装载的动态加载网页，另附可收缩侧栏效果。
 
 ---
-### 二、动态加载实现方法
+## 二、动态加载实现方法
 
 **1. 先用html划分一块区域，用于装填item**
 ```
@@ -119,7 +119,7 @@ function initBlog(type) {
 ```
 
 ---
-### 三、可收缩侧栏实现方法
+## 三、可收缩侧栏实现方法
 
 **1. css创建侧栏和主栏div的父类**
 ```
@@ -184,9 +184,9 @@ function switchOn() {
 ```
 
 ---
-### 四、效果图
-![](image/screenshoot.png)
+## 四、效果图
+![](https://github.com/frogfans/DOM-Demo/blob/master/image/screenshoot.png?raw=true)
 
 ---
-### 五、参考文献
+## 五、参考文献
 [HTML DOM 教程](http://www.runoob.com/htmldom/htmldom-tutorial.html)
