@@ -6,12 +6,12 @@
 ## 二、动态加载实现方法
 
 **1. 先用html划分一块区域，用于装填item**
-```
+```html
 <div id="rightcontent" class="div_parent">  </div> 
 ```
 
 **2. 在区域内用html+css实现一个item的布局**
-```
+```html
 <div id="rightcontent" class="div_parent">
     <!-- Ubuntu下使用Thunderbird收发QQ邮箱 -->
     <a href="ubuntu_5.html">
@@ -30,7 +30,7 @@
 ```
 
 **3. 将元素和属性以及文本存为json数组格式**
-```
+```javascript
 var blogJson = [{
     "title": "Ubuntu下使用Thunderbird收发QQ邮箱",
     "catalog": "Ubuntu",
@@ -47,7 +47,7 @@ var blogJson = [{
 ```
 
 **4. 在js中创建一个函数，将item从外向内（或者从内向外）按照DOM语法构建组装**
-```
+```javascript
 function initBlog(type) {
     var rightcontent = document.getElementById('rightcontent');
 
@@ -109,7 +109,7 @@ function initBlog(type) {
 ```
 
 **5. 在需要装填item的地方调用函数**
-```
+```html
 <script type="text/javascript">
       window.onload = function(){
         initBlog('Total');
@@ -122,7 +122,7 @@ function initBlog(type) {
 ## 三、可收缩侧栏实现方法
 
 **1. css创建侧栏和主栏div的父类**
-```
+```css
 .div_parent {
     flex: none;
     overflow: auto;
@@ -134,7 +134,7 @@ function initBlog(type) {
 ```
 
 **2. 侧栏固定宽度和位置**
-```
+```css
 #leftnav {
     list-style-type: none;
     height: 1000px;
@@ -147,7 +147,7 @@ function initBlog(type) {
 ```
 
 **3. 主栏不设置宽度，使用"margin"来保持和侧栏的距离**
-```
+```css
 #rightcontent {
     height: 1000px;
     margin-left: 200px;
@@ -157,7 +157,7 @@ function initBlog(type) {
 ```
 
 **4. js用boolean值来判断开关状态，DOM改变元素值**
-```
+```javascript
 var switchStatus = true;
 
 function switchBtn() {
