@@ -189,7 +189,7 @@ function switchOn() {
 
 ---
 ## 五、在线体验
-[DOM-Demo on-line](https://universezy.github.io/res/html/dom-demo.html)
+[DOM-Demo on-line](https://universezy.github.io/demo/dom-demo.html)
 
 ---
 ## 五、参考文献
