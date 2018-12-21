@@ -185,11 +185,11 @@ function switchOn() {
 
 ---
 ## 四、效果图
-![](https://github.com/frogfans/DOM-Demo/blob/master/image/screenshoot.png?raw=true)
+![](image/screenshoot.png?raw=true)
 
 ---
 ## 五、在线体验
-[DOM-Demo on-line](https://frogfans.github.io/res/html/dom-demo.html)
+[DOM-Demo on-line](https://universezy.github.io/res/html/dom-demo.html)
 
 ---
 ## 五、参考文献
